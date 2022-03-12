@@ -1,0 +1,112 @@
+li {
+    list-style-type: none;
+}
+
+#answers {
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+html,
+body,
+.wrapper {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.card {
+    background-color: rgb(184, 184, 185, 0.50);
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+    color: rgb(28, 13, 238);
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 30px 40px;
+}
+
+/* card-header::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    background: rgb(221, 98, 16);
+    height: 2px;
+} */
+
+.card-body {
+    min-height: 100px;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+
+/* .card-footer::before {
+    content: " ";
+    display: block;
+    width: 100%;
+    background: yellow;
+    height: 2px;
+}
+
+.card-footer::after {
+    content: " ";
+    display: block;
+    clear: both;
+} */
+
+.btn {
+    border: none;
+    background-color: rgb(28, 13, 238);
+    ;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    color: rgb(253, 251, 251);
+    display: inline-block;
+    font-size: 22px;
+    line-height: 22px;
+    margin: 16px 16px 16px 20px;
+    padding: 14px 34px;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (max-width: 690px) {
+    .btn {
+        font-size: 1rem;
+        margin: 16px 0px 0px 0px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .btn {
+        font-size: 0.8rem;
+    }
+}
