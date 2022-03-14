@@ -28,6 +28,7 @@ button {
     box-shadow: none;
     border-radius: 5px;
     border: 0;
+
 }
 
 a {
@@ -70,6 +71,12 @@ main #starting_page p {
     text-align: center;
 }
 
+main #starting_page #start_quiz_button {
+    position: relative;
+    left: 50%;
+    transform: translate()
+}
+
 main #question_numbers_box {
     display: flex;
     flex-wrap: wrap;
@@ -83,6 +90,10 @@ main #question_numbers_box span {
     padding: 4px 0;
     text-align: center;
     transition: 0.25s;
+}
+
+main #question_numbers_box span.correct {
+    background-color: rgb(27, 216, 74);
 }
 
 main #question_numbers_box span.wrong {
@@ -131,11 +142,11 @@ main #highscore_page #highscore_list div {
 }
 
 main #highscore_page #highscore_list div:nth-child(odd) {
-    background-color: lightcoral;
+    background-color: rgb(163, 224, 245);
 }
 
-main #highscore-page #highscore_list div:nth-child(even) {
-    background-color: lightgreen;
+main #highscore_page #highscore_list div:nth-child(even) {
+    background-color: lightsteelblue;
 }
 
 /* CSS  for  page before quiz */
