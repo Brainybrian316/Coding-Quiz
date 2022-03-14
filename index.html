@@ -10,15 +10,30 @@
 </head>
 
 <body>
+    <!-- high score and time -->
+    <div class="flex-scores">
+        <div class="scores"> <a href="highscores.html">View high scores</a></div>
+        <div class=timer> Time: <span id="time">0</span></div>
+    </div>
+    <!-- Main page -->
     <div class="wrapper">
         <header>
-            <h1>Coding Quiz</h1>
+            <div>
+                <h1>Coding Quiz Challenge</h1>
+                <p>
+                    Try to answer the following code-related questions within the time limit.
+                    Keep in mind that inccorrect answers will penalize your score/time
+                    by ten seconds! Good luck!
+                </p>
+                <button id="generate" class="btn">Start Quiz</button>
+            </div>
         </header>
-        <div class="card">
-            <div class="card-header">
+        <!-- questions page -->
+        <div class="questions">
+            <div class="questions-header">
                 <h2>Question: place question here</h2>
             </div>
-            <div class="card-body">
+            <div class="questons-body">
                 <p>Select an answer:</p>
                 <ul id="answers">
                     <li>
