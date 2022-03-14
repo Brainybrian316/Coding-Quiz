@@ -1,161 +1,139 @@
-li {
-    list-style-type: none;
-}
-
-#answers {
-    width: 100%;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-html,
-body,
-.wrapper {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+/* base html page styling */
+html {
+    min-height: 100vh;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: sans-serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.wrapper {
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+body>* {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* styling for elements */
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    box-shadow: none;
+    border-radius: 5px;
+    border: 0;
+}
+
+a {
+    color: blue;
 }
 
 header {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+main {
+    margin: auto;
+    max-width: 625px;
+    padding: 0.5rem
+}
+
+main section h1 {
+    font-size: 2em;
+    margin: 1rem 0;
+}
+
+main section h2 {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+main section p {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+main section hr {
+    margin: 0.5rem 0;
+}
+
+main #starting_page h1,
+main #starting_page p {
     text-align: center;
-    padding: 20px;
-    padding-top: 0px;
 }
 
-.questions {
-    background-color: rgb(184, 184, 185, 0.50);
-    border-radius: 5px;
-    border-width: 1px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-    color: rgb(28, 13, 238);
-    font-size: 18px;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 30px 40px;
-    visibility: hidden;
-}
-
-/* card-header::after {
-    content: " ";
-    display: block;
-    width: 100%;
-    background: rgb(221, 98, 16);
-    height: 2px;
-} */
-
-.card-body {
-    min-height: 100px;
-}
-
-.card-footer {
-    text-align: center;
-}
-
-
-/* .card-footer::before {
-    content: " ";
-    display: block;
-    width: 100%;
-    background: yellow;
-    height: 2px;
-}
-
-.card-footer::after {
-    content: " ";
-    display: block;
-    clear: both;
-} */
-
-.btn {
-    border: none;
-    background-color: rgb(28, 13, 238);
-    ;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.1);
-    color: rgb(253, 251, 251);
-    display: inline-block;
-    font-size: 22px;
-    line-height: 22px;
-    margin: 16px 16px 16px 20px;
-    padding: 14px 34px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.flex-scores {
+main #question_numbers_box {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.timer {
-    color: red;
-    padding: 10px;
-    margin: 10px;
-    margin-left: 200px;
+main #question_numbers_box span {
+    background-color: lightblue;
+    font-size: 12px;
+    color: white;
+    width: 20px;
+    padding: 4px 0;
+    text-align: center;
+    transition: 0.25s;
 }
 
-.scores {
-    color: blue;
-    padding: 10px;
-    margin: 10px;
-    margin-right: 200px;
+main #question_numbers_box span.wrong {
+    background-color: red;
 }
 
-@media (max-width: 690px) {
-    .btn {
-        font-size: 1rem;
-        margin: 16px 0px 0px 0px;
-        padding: 10px 15px;
-    }
-
-    .flex-scores {
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .timer {
-        margin: auto;
-    }
-
-    .scores {
-        margin: auto;
-    }
-
+main #question_page #answer_list {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
 }
 
-@media (max-width: 500px) {
-    .btn {
-        font-size: 0.8rem;
-    }
+main #question-page #answer_list button {
+    margin: 0.1rem;
+}
 
-    .flex-scores {
-        flex-direction: column;
-        justify-content: space-around;
-    }
+main #question_page #feedback {
+    font-weight: 600;
+}
 
-    .timer {
-        margin: auto;
-    }
+main #get_name_page #score_display {
+    font-weight: 600;
+}
 
-    .scores {
-        margin: auto;
-    }
+main #get_name_page #initials_input {
+    margin-right: 1rem;
+    border: 0px;
+    border-bottom: 1px solid black;
+    padding: 0 0.5rem;
+    text-align: center;
+    width: 5rem;
+}
 
+main #get_name_page #initials_input:focus {
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+main #highscore_page #highscore_list {
+    border: 2px solid blue;
+    margin-bottom: 0.5rem;
+}
+
+main #highscore_page #highscore_list div {
+    padding: 0.2rem 0.5rem;
+}
+
+main #highscore_page #highscore_list div:nth-child(odd) {
+    background-color: lightcoral;
+}
+
+main #highscore-page #highscore_list div:nth-child(even) {
+    background-color: lightgreen;
 }
