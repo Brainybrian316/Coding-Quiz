@@ -1,4 +1,4 @@
-/* base html page styling */
+/* ! base html page styling  to override default */
 html {
     min-height: 100vh;
     scroll-behavior: smooth;
@@ -19,7 +19,7 @@ main {
     flex: 1 0 auto;
 }
 
-/* styling for elements */
+/*!  styling for elements */
 
 button {
     background-color: blue;
@@ -149,7 +149,7 @@ main #highscore_page #highscore_list div:nth-child(even) {
     background-color: lightsteelblue;
 }
 
-/* CSS  for  page before quiz */
+/* ! Before Quiz Styling*/
 
 * {
     margin: 0;
