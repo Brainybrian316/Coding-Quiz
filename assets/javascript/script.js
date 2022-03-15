@@ -213,7 +213,7 @@ function displayNextQuestion() {
         answersList.innerHTML = ""
         answerFeedback.textContent = ""
 
-        // loop for random answers
+        // loop for random answers and create buttons 
         for (let i = 0; i < randomizedAnswers.length; i++) {
             let answer = randomizedAnswers[i]
             let button = document.createElement("button")

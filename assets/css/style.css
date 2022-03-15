@@ -28,6 +28,7 @@ button {
     box-shadow: none;
     border-radius: 5px;
     border: 0;
+    margin: 10px;
 
 }
 
@@ -74,7 +75,7 @@ main #starting_page p {
 main #starting_page #start_quiz_button {
     position: relative;
     left: 50%;
-    transform: translate()
+    transform: translate(-50%)
 }
 
 main #question_numbers_box {
